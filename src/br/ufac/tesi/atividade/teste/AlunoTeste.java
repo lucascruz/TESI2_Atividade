@@ -14,13 +14,14 @@ public class AlunoTeste {
 		PessoaJuridica b = new PessoaJuridica();
 		
 		a.setNome("Macilon");
-		a.setId(40);
+		a.setCpf("123131");
+		a.setId(12);
 		b.setNome("Teste");
 		b.setCnpj("asdhuasdhau");
-		b.setId(2);
+		b.setId(3);
 		ar.adicionar(a);
 		ar.adicionar(b);
-		
+		ar.encerrar();
 	}
 
 }

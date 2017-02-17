@@ -35,5 +35,10 @@ public class RepositorioPessoa {
 		
 	}
 	
+	public void encerrar(){
+		em.close();
+		emf.close();
+	}
+	
 
 }

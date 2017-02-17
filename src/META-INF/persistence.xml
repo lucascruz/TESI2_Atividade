@@ -4,6 +4,9 @@
         version="2.0">
 	<persistence-unit name="AtividadePU" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>br.ufac.tesi.atividade.repositorio</class>
+		<class>br.ufac.tesi.atividade.entidades</class>
+		<class>br.ufac.tesi.atividade.teste</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" 			value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url" 			value="jdbc:mysql://localhost:3306/atividade" />

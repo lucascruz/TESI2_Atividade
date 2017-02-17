@@ -7,11 +7,12 @@ import javax.persistence.*;
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 
 @DiscriminatorColumn(name="TIPO")
+public
 
 abstract class Pessoa{
-
+	@Id
 	private int id;
-
+	
 	private String nome;
 
 	public int getId() {

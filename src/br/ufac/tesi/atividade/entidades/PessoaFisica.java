@@ -1,15 +1,11 @@
 package br.ufac.tesi.atividade.entidades;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
+import javax.persistence.DiscriminatorValue;
 
 @Entity
-
 @DiscriminatorValue("FISICA")
-public
-
-class PessoaFisica extends Pessoa {
-
+public class PessoaFisica extends Pessoa {    
 	private String cpf;
 
 	public String getCpf() {

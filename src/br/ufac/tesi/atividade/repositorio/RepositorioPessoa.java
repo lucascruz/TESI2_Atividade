@@ -1,6 +1,5 @@
 package br.ufac.tesi.atividade.repositorio;
 
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -14,31 +13,27 @@ public class RepositorioPessoa {
 	EntityManager em;
 
 	public RepositorioPessoa(){
+
 		emf = Persistence.createEntityManagerFactory("AtividadePU");
 		em = emf.createEntityManager();
 	}
 
-	public void adicionar(PessoaFisica pessoa){
-
+	public void adicionar(PessoaFisica pf){
 		em.getTransaction().begin();
-		em.persist(pessoa);
+		em.persist(pf);
 		em.getTransaction().commit();
-		
 	}
-	
-	
-	public void adicionar(PessoaJuridica pessoa){
 
+	public void adicionar(PessoaJuridica pj){
 		em.getTransaction().begin();
-		em.persist(pessoa);
+		em.persist(pj);
 		em.getTransaction().commit();
-		
 	}
-	
+
 	public void encerrar(){
 		em.close();
 		emf.close();
 	}
 	
-
 }
+
